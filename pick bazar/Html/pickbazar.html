@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick bazar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/pickbazar.css">
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex justify-content-between mt-4 mx-4" style="position: fixed;">
+        <div>
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F860%2FPickBazar.png&w=1920&q=75"
+                class="w-25 h-25 d-inline" alt="">
+
+            <div class="btn dropdown-toggle btn-outline-success mx-4" data-bs-toggle="dropdown">
+                <ion-icon name="logo-apple"></ion-icon> Grocery
+            </div>
+            <div class="dropdown-menu text-center">
+                <div class="dropdown-item"> Grocery</div>
+                <div class="dropdown-item"> Bakery</div>
+                <div class="dropdown-item"> Makeup</div>
+                <div class="dropdown-item"> Bags</div>
+                <div class="dropdown-item"> Clothing</div>
+                <div class="dropdown-item"> Furniture</div>
+                <div class="dropdown-item"> Daily Needs</div>
+                <div class="dropdown-item"> Books</div>
+            </div>
+        </div>
+        <div class="d-flex ">
+            <div>
+                <input type="text" class="px-5 py-1 alert-success">
+            </div>
+            <div class="btn bg-success d-flex h-50">
+                <ion-icon name="search-outline"></ion-icon>
+                <h6>Search</h6>
+            </div>
+
+        </div>
+        <div>
+            <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#abcd">
+                Shop
+            </div>
+            <div class="offcanvas offcanvas-top" id="abcd">
+                <h1 class="my-5">All shops</h1>
+                <div class="row">
+                    <div class="col d-flex">
+                        <div>
+                            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F882%2Fconversions%2FFurniture-thumbnail.jpg&w=1920&q=75"
+                                width="50px" class="rounded-circle mx-2" alt="">
+                        </div>
+                        <div>
+                            <h3>Furniture Shop </h3>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> 588 Finwood Road, New Jersey, East Dover,
+                                08753, USA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div>
+                            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F894%2Fconversions%2Ffashion-thumbnail.jpg&w=1920&q=75"
+                                width="50px" class="rounded-circle mx-2" alt="">
+                        </div>
+                        <div>
+                            <h3>Clothing Shop </h3>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> 4885 Spring Street, Illinois, Lincoln,
+                                62656, USA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div>
+                            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F886%2Fconversions%2FBackpack-thumbnail.jpg&w=1920&q=75"
+                                width="50px" class="rounded-circle mx-2" alt="">
+                        </div>
+                        <div>
+                            <h3>Bags Shop </h3>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> 1740 Bedford Street, Alabama, Michigan,
+                                35203, USA
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="btn ">
+            Offers
+        </div>
+        <div class="btn ">
+            FAQ
+        </div>
+        <div class="btn ">
+            Contact
+        </div>
+        <div>
+        <div class="btn btn-success " data-bs-target="#abc" data-bs-toggle="modal">
+            <h6>Become a seller</h6> 
+        </div>
+        <section class="modal" id="abc" >
+            <section class="modal-dialog bg-warning">
+                <section class="modal-header modal-content" >
+                    <article class="text-dark"> Name</article>
+                    <input type="text" placeholder="type here">
+                    <article class="btn btn-close bg-danger"></article>
+                </section>
+                <section class="modal-body">
+                    <article class="modal-content">
+                        <article class="text-dark"> Email</article>
+                    <input type="email" placeholder="type here">
+                    <article class="text-dark"> Password</article>
+                    <input type="password" placeholder="type here">
+                </article>
+                </section>
+                <section class="modal-footer "  >
+                    <article class="btn btn-primary"> save</article>
+                    <article class="btn btn-danger"> close</article>
+                    <article class="btn btn-close"> </article>
+    
+                </section>
+    </div>
+        <div class="btn btn-success h-50 mx-4">
+            <h6>Shop</h6>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container  d-flex justify-content-center flex-column text-center" style="background-image: url(../MEDIA/grocery.webp);background-size: cover; background-repeat: no-repeat; width: 1600px; height:700px;">
+        
+        <p class="display-5 my-3"> <b> Groceries Delivered in 90 Minute </b> </p>
+        <p class=" my-3">Get your healthy foods & snacks delivered at your doorsteps all day everyday</p>
+        <div class="d-flex justify-content-center">
+            <div>
+                <input type="text" class="px-5 py-2 alert-success">
+            </div>
+            <div class="btn bg-success d-flex py-1">
+                <ion-icon name="search-outline"></ion-icon>
+                <h6>Search</h6>
+            </div>
+
+        </div>
+ </div>
+
+ 
+ <section class="container d-flex justify-content-evenly my-5 alert-secondary flex-wrap">
+    <section class="card ">
+        <article class="card-header">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1%2FApples.jpg&w=1920&q=75" alt="" width="220px"
+                height="220px">
+        </article>
+        <article class="card-body">
+            <aside>Trendy Fridge combo</aside>
+            <aside class="text-dark"> <b> ₹199 </b> <strike>250</strike></aside>
+            <aside class="text-danger ">Free Delivery</aside>
+            <aside>
+                <aside class="bg-success d-inline p-1 text-white" style="border-radius: 15px;"> 3.7* </aside>
+                <aside class="text-primary"> 6410 Reviews</aside>
+            </aside>
+        </article>
+        <article class="card-footer">
+
+        </article>
+    </section>
+    <section class="card">
+        <article class="card-header">
+            <img src="https://images.meesho.com/images/products/25515256/a6300_400.jpg" class="img-thumbnail" alt=""
+                width="220px" height="220px">
+        </article>
+        <article class="card-body">
+            <aside>Urbane Elegant Men Shirts</aside>
+            <aside> <b> ₹299</b> <strike>450</strike></aside>
+            <aside class="text-danger ">Free Delivery</aside>
+            <aside>
+                <aside class="bg-success d-inline p-1 text-white rounded-pill"> 3.7* </aside>
+                <aside class="text-primary"> 1230 Reviews</aside>
+            </aside>
+        </article>
+        <article class="card-footer">
+
+        </article>
+    </section>
+    <section class="card">
+        <article class="card-header">
+            <img src="https://images.meesho.com/images/products/115129656/vak0k_400.jpg" class="img-thumnail" alt=""
+                width="220px" height="220px">
+        </article>
+        <article class="card-body">
+            <aside>Sia Trendy Women's Sarees</aside>
+            <aside> <b> ₹250 </b> onwards</aside>
+            <aside class="text-danger ">Free Delivery</aside>
+            <aside>
+                <aside class="bg-success d-inline p-1 text-white text-white rounded-pill"> 3.9* </aside>
+                <aside class="text-primary"> 6610 Reviews</aside>
+            </aside>
+        </article>
+        <article class="card-footer">
+
+        </article>
+    </section>
+    <section class="card">
+        <article class="card-header">
+            <img src="https://images.meesho.com/images/products/73748258/nqjh4_400.jpg" class="img-thumbnail" alt=""
+                width="220px" height="220px">
+        </article>
+        <article class="card-body">
+            <aside class="text-secondary">Charvi Petite Sarees</aside>
+            <aside> <b> ₹236 </b> <strike>300</strike></aside>
+            <aside class="text-danger ">Free Delivery</aside>
+            <aside>
+                <aside class="bg-success d-inline p-1 text-white" style="border-radius: 15px;"> 3.1* </aside>
+                <aside class="text-primary">1243 Reviews</aside>
+            </aside>
+        </article>
+        <article class="card-footer">
+
+        </article>
+    </section>
+</section>
+
+    
+
+
+
+
+
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>
